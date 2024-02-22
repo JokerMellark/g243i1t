@@ -1,7 +1,5 @@
 function aperte(){
-    let botao = document.getElementsByClassName('btn').style;
-    botao.style.cssTxt =
-        'background-color:blue'
+    document.documentElement.style.setProperty("--cor-principal","blue")
     while (true) {
         alert("Alô,queridos!");
     }
