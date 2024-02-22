@@ -1,5 +1,5 @@
 function aperte(){
-    document.documentElement.style.setProperty("--cor-principal","blue")
+    document.documentElement.style.setProperty("--cor-botao","blue")
     while (true) {
         alert("Alô,queridos!");
     }
