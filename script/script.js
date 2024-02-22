@@ -1,6 +1,8 @@
 function aperte(){
-    alert("Alô,queridos!");
-    let botao = document.getElementsByClassName('btn');
+    let botao = document.getElementsByClassName('btn').style;
     botao.style.cssTxt =
-        'color:blue'
+        'background-color:blue'
+    while (true) {
+        alert("Alô,queridos!");
+    }
 }
