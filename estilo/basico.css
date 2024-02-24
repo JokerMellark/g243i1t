@@ -1,9 +1,5 @@
-:root{
-    --cor-botao: black
-}
-
 .btn {
-  background-color: var(--cor-botao);
+  background-color: black;
   color: white;
   font-size: 36px;
 }
