@@ -62,10 +62,9 @@ body {
 
 
 
-@media (min-width: 800px) and (max-width:1227px) {
+@media (min-width: 800px) {
   .barra {
     background-color: rgb(45, 247, 251);
-    height: 80px;
   }
 
   .mobile {
@@ -78,23 +77,19 @@ body {
   }
 
   .conteudo {
-    text-align: end;
+    text-align: right;
   }
 
   .botao {
     width: 19.5%;
-    margin-top: 0%;
+    margin-top: 0;
   }
 }
 
 @media (min-width: 1228px) {
   .barra {
     background-color: rgb(0, 217, 221);
-    height: 120px;
-  }
-
-  .mobile {
-    display: none;
+    height: 110px;
   }
 
   .tablet {
@@ -108,11 +103,5 @@ body {
 
   .conteudo {
     text-align: left;
-  }
-
-  #botao {
-    width: 150px;
-    font-size: 24px;
-    margin-top: 0%;
   }
 }
