@@ -1,10 +1,11 @@
 function abrir_aba(num) {
     for (let i = 1; i <= 5; i++) {
-        let id_btn = "botao" + i;
+        let id_btn = "btn" + i;
         let id_aba = "aba" + i;
         document.getElementById(id_btn).disabled = false;
         document.getElementById(id_aba).style.display = "none";
     }
+
     if (num == "1") {
         document.getElementById("btn1").disabled = true;
         document.getElementById("aba1").style.display = "block";
@@ -25,5 +26,30 @@ function abrir_aba(num) {
         document.getElementById("btn5").disabled = true;
         document.getElementById("aba5").style.display = "block";
     }
+}
 
+let contador = null;
+let inicio = 0;
+let fim = 0;
+
+function contagem() {
+    if (inicio != fim) {
+        document.getElementById("valor").innerHTML = inicio;
+        if (inicio > fim) {
+            inicio--;
+        } else {
+            inicio++;
+        }
+    }
+}
+
+function contar() {
+    inicio = document.getElementById("inicio").value;
+    fim = document.getElementById("fim").value;
+    if (inicio > fim) {
+        fim = Number(fim) - 1;
+    } else {
+        fim = Number(fim) + 1;
+    }
+    contador = setInterval(contagem, 500);
 }
