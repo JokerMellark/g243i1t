@@ -1,0 +1,107 @@
+body {
+  background-color: rgb(131, 141, 231);
+}
+
+.conteudo {
+  text-align: center;
+}
+
+.botao {
+  background-color: rgb(231, 189, 236);
+  text-align: center;
+  font-size: 26px;
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.abas {
+  width: 100%;
+  height: 400px;
+}
+
+#aba1 {
+  background-color: rgb(163, 241, 161);
+}
+
+#aba2 {
+  background-color: rgb(241, 161, 185);
+}
+
+#aba3 {
+  background-color: rgb(163, 241, 161);
+}
+
+#aba4 {
+  background-color: rgb(241, 161, 185);
+}
+
+#aba5 {
+  background-color: rgb(163, 241, 161);
+}
+
+.barra {
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  background-color: rgb(131, 141, 231);
+}
+
+.desktop {
+  display: none;
+}
+
+.tablet {
+  display: none;
+}
+
+.mobile {
+  font-size: 50px;
+}
+
+
+
+
+@media (min-width: 800px) {
+  .barra {
+    background-color: rgb(45, 247, 251);
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: inline;
+    font-size: 55px;
+  }
+
+  .conteudo {
+    text-align: right;
+  }
+
+  .botao {
+    width: 19.5%;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1228px) {
+  .barra {
+    background-color: rgb(0, 217, 221);
+    height: 110px;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: inline;
+    font-size: 70px;
+  }
+
+  .conteudo {
+    text-align: left;
+  }
+}
